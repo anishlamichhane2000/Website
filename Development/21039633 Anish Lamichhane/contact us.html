@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content=" 3rd course work ">
+  <meta name="keywords" content="HTML,CSS,,JavaScript">
+	<meta name="author" content="Anish lamichhane" />
+	<meta http-equiv="refresh" content="50" />
+	<title> Contact </title>
+	<!--to link with css file-->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+</head> 
+  <!--to style the html file-->
+  <style>
+	body {
+		background-color:paleturquoise; 
+
+	} 
+</style>
+
+		<script src="validation.js"></script>
+		<body background="Img/001.jpg">
+<div class="main"><!--to create div class the html file-->
+		<nav><!--to provide navigation the html file-->
+			<tr>
+			 <table bgcolor="black" style="width: 90%; margin: auto;">
+				<th class="navigation"><a href="Homepage.html">Homepage</a></th>
+				<th class="navigation"><a href="Product.html" style="color: darkred;" >Product</a></th>
+				<th class="current"><a href="#">Contact</a></th>
+				<th class="navigation"><a href="Blog.html">Blog</a></th>
+				<th class="navigation"><a href="Research.html" style="color: darkred;" >Research</a></th>
+	    </table>
+	    </tr>	
+		</nav>
+</div>
+ <div class="contain">
+ <header style="text-align: center; color: orange;height: 55px;"><h1> Contact us</h1></header>
+ <section class="menu" style="width: 50%; margin: auto; padding: 10px; "> <!--to provide section class the html file-->
+   <tr>
+		<p><h1 align="center" > Inquiry Form</h1></p>
+	    <form align="center" action="backup.php" name="messageForm" onsubmit="validateForm()">
+	    	<p align="center" class="form"><b>First name:</b> <input type="text" name="firstname"></p><br>
+	   	<p align="center" class="form"><b>Last name:</b> <input type="text" name="lastname"></p><br>
+		<p align="center" class="form"><b>Email Address: </b><input type="text" name="email" placeholder="@gmail.com" required></p><br>
+		<p class="inpHead"><b>Branch location:</b></p>
+		<select  id="Branch location" name="Branch location">
+            <option value="invalid"><b>Select the Branch location</b> </option> 
+            <option value="Branch location">Kathmandu</option>
+            <option value="Branch location">Banepa</option>
+            <option value="Branch location">Bhaktapur</option>
+            <option value="Branch location">Chitwan</option>
+            </select><br><br>
+         <p align="center" class="form"><b>gender:<input type="radio" name="gender" value="male" checked>Male
+	        	<input type="radio" name="gender" value="female"> female</p><br></b>
+         <p align="center" class="form"><b> If any inquiry:</b><br><textarea name="message" rows="2" cols="30" placeholder="enter message"></textarea></p>
+		<p align="center" class="form"><b><input type="submit" value="submit"></b></p>
+		<p align="center" class="form"><b><input type="reset" value="reset"></b></p>
+	</form>
+</div>
+</tr>
+</section>
+</div>
+       <P class="form" align="center" class = "gg" id = "date">
+          <script >
+          	//var user = prompt("Enter your name:");
+			//document.getElementById('username').innerHTML = "Hello "+user
+			function display_date() {
+				document.getElementById('date').innerHTML = Date();
+				setTimeout(display_date,1000);
+			}
+			display_date();
+		</script>
+		<footer><!--to create footer the html file-->
+		<table class="now" bgcolor="DarkSalmon" width="100%">
+			<tr>
+			<th>
+			<p>&copy;ASGARD Electronic gadget</p>
+			<div class="social"><label><b>Social contact:</b></label>
+			<a href="https://www.facebook.com/profile.php?id=100072608224413" target="_blank"><i class="fa fa-facebook"></i></a>
+		      <a  href="https://www.instagram.com/anishlamichhane14/" target="_blank"><i class="fa fa-instagram"></i></a>
+	          </div>
+			    </th>
+				</tr>
+			</table>
+		</footer>
+         
+
+</body>
+</html>
